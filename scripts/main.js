@@ -47,6 +47,7 @@ d3.csv("./data/tsne_data/output.csv", d3.autoType).then((robots_csv) => {
               perception_map.set(row.ROBOT, row);
             }
           });
+          console.log(robots.csv);
           console.log(perception_map);
 
           const coordinates = await getNormCoordinates(robots_csv);
